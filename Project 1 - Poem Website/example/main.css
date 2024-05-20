@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+body {
+  background: rgb(236, 150, 150);
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  color: rgb(169, 227, 253);
+}
+
+p {
+  font-size: 30px;
+  font-family: 'Abril FatFace';
+}
+
+img {
+  width: 30%;
+}
