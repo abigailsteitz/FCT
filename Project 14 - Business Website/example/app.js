@@ -2,19 +2,19 @@
 'use strict';
 
 function secretMessage() {
-    alert("You have unlocked the secret message!")
+    alert("If you like purple, choose taro. If you like brown better, choose milk tea.")
 }
 function displayDog() {
-    document.getElementById("dogContent").style.display = "block";
-    document.getElementById("catContent").style.display = "none";
+    document.getElementById("Taro").style.display = "block";
+    document.getElementById("Milktea").style.display = "none";
     document.getElementById("defaultContent").style.display = "none";
 }
 function displayCat() {
-    document.getElementById("dogContent").style.display = "none";
-    document.getElementById("catContent").style.display = "block";
+    document.getElementById("Taro").style.display = "none";
+    document.getElementById("Milktea").style.display = "block";
     document.getElementById("defaultContent").style.display = "none";
 }
-function redBackground() {
-    document.body.style.backgroundColor = "red";
+function blueBackground() {
+    document.body.style.backgroundColor = "blue";
     console.log(document)
 }

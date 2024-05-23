@@ -16,9 +16,9 @@ button {
   padding: 15px 30px;
 }
 
-#redButton {
+#blueButton {
   background-color: white;
-  color: red;
+  color: rgb(62, 107, 190);
   font-size: 10px;
   margin: 5px;
 }
@@ -27,10 +27,10 @@ button {
   display: block;
 }
 
-#dogContent {
+#Taro {
   display: none;
 }
 
-#catContent {
+#Milktea {
   display: none;
 }
