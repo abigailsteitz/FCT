@@ -6,15 +6,15 @@ function secretMessage() {
 }
 function displayDog() {
     document.getElementById("dogContent").style.display = "block";
-    document.getElementById("catContent").style.display = "none";
+    document.getElementById("foxContent").style.display = "none";
     document.getElementById("defaultContent").style.display = "none";
 }
-function displayCat() {
+function displayFox() {
     document.getElementById("dogContent").style.display = "none";
-    document.getElementById("catContent").style.display = "block";
+    document.getElementById("foxContent").style.display = "block";
     document.getElementById("defaultContent").style.display = "none";
 }
-function redBackground() {
-    document.body.style.backgroundColor = "red";
+function blueBackground() {
+    document.body.style.backgroundColor = "blue";
     console.log(document)
 }
