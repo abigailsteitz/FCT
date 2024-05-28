@@ -1,30 +1,31 @@
 body {
   font-family: arial;
-  background-color: tomato;
+  background-color: rgb(243, 169, 210);
   color: white;
 }
 
 img {
-  width: 50%;
+  height: 25%;
+  width: 25%;
   border: 10px double white;
 }
 
 h1 {
-  text-shadow: 3px 3px gray;
+  text-shadow: 3px 3px rgb(111, 52, 129);
   font-family: 'Franklin Gothic Medium';
 }
 
 button {
-  background-color: gray;
+  background-color: rgb(108, 111, 238);
   color: white;
   padding: 5px 10px;
   font-size: 16px;
   border-radius: 5px;
 }
 
-#LAResult,
-#SeattleResult,
-#MiamiResult,
-#ChicagoResult {
+#BelleResult,
+#AuroraResult,
+#JasmineResult,
+#SnowWhiteResult {
   display: none;
 }
