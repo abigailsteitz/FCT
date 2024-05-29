@@ -2,54 +2,71 @@
 'use strict';
 
 function resetResult() {
-    document.getElementById("LAResult").style.display = "none";
-    document.getElementById("SeattleResult").style.display = "none";
-    document.getElementById("MiamiResult").style.display = "none";
-    document.getElementById("ChicagoResult").style.display = "none";
+    document.getElementById("UniResult").style.display = "none";
+    document.getElementById("DragResult").style.display = "none";
+    document.getElementById("PhoResult").style.display = "none";
 }
 
 function seeResult() {
-    var LA = 0;
-    var Seattle = 0;
-    var Miami = 0;
-    var Chicago = 0;
+    var Unicorn = 0;
+    var Dragon = 0;
+    var Phoenix = 0;
 
-    if (document.getElementById("hot").checked) {
-        LA += 1;
-        Miami += 1;
-    } else if (document.getElementById("cold").checked) {
-        Chicago += 1;
-    } else {
-        Seattle += 1;
+    if (document.getElementById("Ice Cream").checked) {
+        Unicorn += 1;
+    } else if (document.getElementById("Cookie").checked) {
+        Dragon += 1;
+    } else if (document.getElementById("Cake").checked) {
+        Phoenix += 1;
     }
 
-    if (document.getElementById("bus").checked) {
-        Miami += 1;
-    } else if (document.getElementById("car").checked) {
-        LA += 1;
-    } else {
-        Seattle += 1;
-        Chicago += 1;
+    if (document.getElementById("The Forest").checked) {
+        Unicorn += 1;
+    } else if (document.getElementById("The Mountain").checked) {
+        Dragon += 1;
+    } else if (document.getElementById("The Beach").checked) {
+        Phoenix += 1;
     }
 
-    if (document.getElementById("walk").checked) {
-        Seattle += 1;
-        Miami += 1;
-    } else if (document.getElementById("drive").checked) {
-        LA += 1;
-    } else {
-        Chicago += 1;
+    if (document.getElementById("Purple").checked) {
+        Unicorn += 1;
+    } else if (document.getElementById("Green").checked) {
+        Dragon += 1;
+    } else if (document.getElementById("Orange").checked) {
+        Phoenix += 1;
     }
 
-    resetResult();
+    if (document.getElementById("Bag").checked) {
+        Unicorn += 1;
+    } else if (document.getElementById("Necklace").checked) {
+        Dragon += 1;
+    } else if (document.getElementById("Hat").checked) {
+        Phoenix += 1;
+    }
 
-    if (LA > Seattle && LA > Miami && LA > Chicago) {
-        document.getElementById("LAResult").style.display = "block";
-    } else if (Seattle > LA && Seattle > Miami && Seattle > Chicago) {
-        document.getElementById("SeattleResult").style.display = "block";
-    } else if (Miami > LA && Miami > Seattle && Miami > Chicago) {
-        document.getElementById("MiamiResult").style.display = "block";
+    if (document.getElementById("5").checked) {
+        Unicorn += 1;
+        Dragon += 1;
+        Phoenix += 1;
+    } else if (document.getElementById("3").checked) {
+        Unicorn += 1;
+        Dragon += 1;
+        Phoenix += 1;
+    } else if (document.getElementById("1").checked) {
+        Unicorn += 1;
+        Dragon += 1;
+        Phoenix += 1;
+    }
+
+    resetResult(); 
+
+    if (Unicorn > Dragon && Unicorn> Phoenix ) {
+        document.getElementById("UniResult").style.display = "block";
+    } else if (Dragon > Unicorn && Dragon > Phoenix) {
+        document.getElementById("DragResult").style.display = "block";
+    } else if (Dragon == Unicorn && Dragon == Phoenix && Unicorn == Phoenix) {
+        document.getElementById("NotResult").style.display = "block";
     } else {
-        document.getElementById("ChicagoResult").style.display = "block";
+        document.getElementById("PhoResult").style.display = "block";
     }
 }

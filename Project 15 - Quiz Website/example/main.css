@@ -1,6 +1,6 @@
 body {
-  font-family: arial;
-  background-color: tomato;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(255, 181, 234);
   color: white;
 }
 
@@ -10,21 +10,30 @@ img {
 }
 
 h1 {
-  text-shadow: 3px 3px gray;
+  text-shadow: 3px 3px rgb(174, 125, 160);
   font-family: 'Franklin Gothic Medium';
 }
 
+
 button {
-  background-color: gray;
-  color: white;
+  background-color: rgb(219, 219, 219);
+  color: rgb(0, 0, 0);
   padding: 5px 10px;
-  font-size: 16px;
+  font-size: 20px;
   border-radius: 5px;
 }
 
-#LAResult,
-#SeattleResult,
-#MiamiResult,
-#ChicagoResult {
+label{
+  font-size: 25px
+}
+
+input[type='radio'] { 
+  transform: scale(1.5); 
+}
+
+#UniResult,
+#DragResult,
+#PhoResult, 
+#NotResult{
   display: none;
 }
