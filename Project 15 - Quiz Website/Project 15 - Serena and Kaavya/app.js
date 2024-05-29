@@ -19,68 +19,74 @@ function seeResult() {
     if (document.getElementById("black").checked) {
         Emo += 1;
     } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
+        Lorax += 1;
+    } else if (document.getElementById("pink").checked) {
+        Cat += 1;
+    } else if (document.getElementById("red").checked) {
+        Alpha += 1;
+    } else {
+        Rizzler += 1;
+    }
 
-    if (document.getElementById("black").checked) {
+    if (document.getElementById("omegas").checked) {
+        Alpha += 1;
+    } else if (document.getElementById("twizzlers").checked) {
+        Rizzler += 1;
+    } else if (document.getElementById("truffula").checked) {
+        Lorax += 1;
+    } else if (document.getElementById("licorice").checked) {
         Emo += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
+    } else {
+        Cat += 1;
+    }
 
-    if (document.getElementById("black").checked) {
+    if (document.getElementById("cry").checked) {
         Emo += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;    
+    } else if (document.getElementById("anime").checked) {
+        Cat += 1;
+    } else if (document.getElementById("trees").checked) {
+        Lorax += 1;
+    } else if (document.getElementById("quick").checked) {
+        Rizzler += 1;
+    } else {
+        Alpha += 1;
+    }
 
-    if (document.getElementById("black").checked) {
+    if (document.getElementById("cave").checked) {
         Emo += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;    
+    } else if (document.getElementById("Tokyo").checked) {
+        Cat += 1;
+    } else if (document.getElementById("thneedville").checked) {
+        Lorax += 1;
+    } else if (document.getElementById("beach").checked) {
+        Rizzler += 1;
+    } else {
+        Alpha += 1;    
+    }
 
-    if (document.getElementById("black").checked) {
-        Emo += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;
-    } else if (document.getElementById("orange").checked) {
-        Chicago += 1;    
-
+    if (document.getElementById("hug").checked) {
+        Lorax += 1;
+    } else if (document.getElementById("gyatt").checked) {
+        Rizzler += 1;
+    } else if (document.getElementById("sigma").checked) {
+        Alpha += 1;
+    } else if (document.getElementById("shy").checked) {
+        Cat += 1;
+    } else {
+        Emo += 1;   
+    } 
 
     resetResult();
 
-    if (LA > Seattle && LA > Miami && LA > Chicago) {
-        document.getElementById("LAResult").style.display = "block";
-    } else if (Seattle > LA && Seattle > Miami && Seattle > Chicago) {
-        document.getElementById("SeattleResult").style.display = "block";
-    } else if (Miami > LA && Miami > Seattle && Miami > Chicago) {
-        document.getElementById("MiamiResult").style.display = "block";
+    if (Lorax > Rizzler && Lorax > Emo && Lorax > Cat && Lorax > Alpha) {
+        document.getElementById("LoraxResult").style.display = "block";
+    } else if (Rizzler > Lorax && Rizzler > Emo && Rizzler > Cat && Rizzler > Alpha) {
+        document.getElementById("RizzlerResult").style.display = "block";
+    } else if (Emo > Rizzler && Emo > Lorax && Emo > Cat && Emo > Alpha) {
+        document.getElementById("EmoResult").style.display = "block";
+    } else if (Cat > Rizzler && Cat > Lorax && Cat > Emo && Cat > Alpha) {
+        document.getElementById("CatResult").style.display = "block";
     } else {
-        document.getElementById("ChicagoResult").style.display = "block";
+        document.getElementById("AlphaResult").style.display = "block";
     }
 }

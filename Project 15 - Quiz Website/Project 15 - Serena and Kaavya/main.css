@@ -1,7 +1,8 @@
 body {
     font-family: arial;
-    background-color: tomato;
+    background-color: rgb(123, 202, 251);
     color: white;
+    font-size: 20px;
   }
   
   img {
@@ -10,21 +11,22 @@ body {
   }
   
   h1 {
-    text-shadow: 3px 3px gray;
     font-family: 'Franklin Gothic Medium';
+    font-size: 50px;
   }
   
   button {
     background-color: gray;
     color: white;
     padding: 5px 10px;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 5px;
   }
   
-  #LAResult,
-  #SeattleResult,
-  #MiamiResult,
-  #ChicagoResult {
+  #AlphaResult,
+  #CatResult,
+  #EmoResult,
+  #LoraxResult,
+  #RizzlerResult {
     display: none;
   }
