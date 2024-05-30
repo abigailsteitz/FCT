@@ -2,19 +2,19 @@
 'use strict';
 
 function secretMessage() {
-    alert("You have unlocked the secret message!")
+    alert("Click here for a free coupon code!")
 }
-function displayDog() {
-    document.getElementById("dogContent").style.display = "block";
-    document.getElementById("catContent").style.display = "none";
+function displayYes() {
+    document.getElementById("Yes").style.display = "block";
+    document.getElementById("No").style.display = "none";
     document.getElementById("defaultContent").style.display = "none";
 }
-function displayCat() {
+function displayNo() {
     document.getElementById("dogContent").style.display = "none";
     document.getElementById("catContent").style.display = "block";
     document.getElementById("defaultContent").style.display = "none";
 }
 function redBackground() {
-    document.body.style.backgroundColor = "red";
+    document.body.style.backgroundColor = "Green";
     console.log(document)
 }

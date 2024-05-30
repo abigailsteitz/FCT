@@ -2,54 +2,75 @@
 'use strict';
 
 function resetResult() {
-    document.getElementById("LAResult").style.display = "none";
-    document.getElementById("SeattleResult").style.display = "none";
-    document.getElementById("MiamiResult").style.display = "none";
-    document.getElementById("ChicagoResult").style.display = "none";
+    document.getElementById("DoctorResult").style.display = "none";
+    document.getElementById("ConstructionResult").style.display = "none";
+    document.getElementById("HomelessResult").style.display = "none";
+    document.getElementById("BusinessResult").style.display = "none";
+    document.getElementById("FootballResult").style.display = "none";
 }
 
 function seeResult() {
-    var LA = 0;
-    var Seattle = 0;
-    var Miami = 0;
-    var Chicago = 0;
+    var Doctor = 0;
+    var Construction = 0;
+    var Homeless = 0;
+    var Business = 0;
+    var Football = 0;
 
-    if (document.getElementById("hot").checked) {
-        LA += 1;
-        Miami += 1;
-    } else if (document.getElementById("cold").checked) {
-        Chicago += 1;
-    } else {
-        Seattle += 1;
+    if (document.getElementById("myself").checked) {
+        Business += 1;
+        Football += 2;
+    } else if (document.getElementById("others").checked) {
+        Doctor += 1;
+        Construction += 2;
     }
 
-    if (document.getElementById("bus").checked) {
-        Miami += 1;
-    } else if (document.getElementById("car").checked) {
-        LA += 1;
-    } else {
-        Seattle += 1;
-        Chicago += 1;
+    if (document.getElementById("Yes").checked) {
+        Construction += 1;
+        Football += 1;
+        Homeless += 1;
+    } else if (document.getElementById("No").checked) {
+        Doctor += 1;
+        Business += 1.5;
     }
 
-    if (document.getElementById("walk").checked) {
-        Seattle += 1;
-        Miami += 1;
-    } else if (document.getElementById("drive").checked) {
-        LA += 1;
-    } else {
-        Chicago += 1;
+    if (document.getElementById("yes").checked) {
+        Doctor += 1;
+        Business += 1;
+    } else if (document.getElementById("no").checked) {
+        Construction += 2;
+        Homeless += 1;
+        Football += 1;
+    } 
+
+    if (document.getElementById("get my hands dirty").checked) {
+        Construction +=1;
+    }  else if (document.getElementById("others clean it up").checked) {
+        Business += 1;
+        Football += 1;
     }
+
+    if (document.getElementById("math").chekced) {
+        Business += 1;
+        Construction += 2;
+    }  else if (document.getElementById("science").checked) {
+        Doctor += 2;
+    }  else if(document.getElementById("PE").checked) {
+        Football += 3.1;
+        Homeless += 1;
+    }
+
 
     resetResult();
 
-    if (LA > Seattle && LA > Miami && LA > Chicago) {
-        document.getElementById("LAResult").style.display = "block";
-    } else if (Seattle > LA && Seattle > Miami && Seattle > Chicago) {
-        document.getElementById("SeattleResult").style.display = "block";
-    } else if (Miami > LA && Miami > Seattle && Miami > Chicago) {
-        document.getElementById("MiamiResult").style.display = "block";
+    if (Doctor > Business && Doctor > Homeless && Doctor > Construction && Doctor > Football) {
+        document.getElementById("DoctorResult").style.display = "block";
+    } else if (Construction > Doctor && Construction > Business && Construction > Homeless && Construction > Football) {
+        document.getElementById("ConstructionResult").style.display = "block";
+    
+    } else if (Football > Doctor && Football > Construction && Football > Business && Football > Homeless) {
+        document.getElementById("FootballResult").style.display = "block";
+    } else if (Business > Doctor && Business > Football && Business > Construction && Business > Homeless) {
+        document.getElementById("BusinessResult").style.display = "block";
     } else {
-        document.getElementById("ChicagoResult").style.display = "block";
-    }
-}
+        document.getElementById("HomelessResult").style.display = "block";
+    } }
