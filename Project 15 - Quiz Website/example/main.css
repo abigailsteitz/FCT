@@ -1,6 +1,6 @@
 body {
   font-family: arial;
-  background-color: tomato;
+  background-color: #e799d0;
   color: white;
 }
 
@@ -22,9 +22,9 @@ button {
   border-radius: 5px;
 }
 
-#LAResult,
-#SeattleResult,
-#MiamiResult,
-#ChicagoResult {
+#DiorResult,
+#FentiResult,
+#KidResult,
+#TGlowResult {
   display: none;
 }
