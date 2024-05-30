@@ -1,6 +1,6 @@
 body {
   font-family: arial;
-  background-color: tomato;
+  background-color: rgb(71, 114, 255);
   color: white;
 }
 
@@ -22,9 +22,9 @@ button {
   border-radius: 5px;
 }
 
-#LAResult,
-#SeattleResult,
-#MiamiResult,
-#ChicagoResult {
+#EnglishResult,
+#ArtResult,
+#MathResult,
+#ScienceResult {
   display: none;
 }
