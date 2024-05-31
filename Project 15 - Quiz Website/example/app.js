@@ -6,49 +6,76 @@ function resetResult() {
     document.getElementById("SeattleResult").style.display = "none";
     document.getElementById("MiamiResult").style.display = "none";
     document.getElementById("ChicagoResult").style.display = "none";
+    document.getElementById("SpiderResult").style.display = "none";
 }
-
 function seeResult() {
-    var LA = 0;
-    var Seattle = 0;
-    var Miami = 0;
-    var Chicago = 0;
+    var Spider = 0;
+    var Human = 0;
+    var Plankton = 0;
+    var Job= 0;
+    var Fish= 0;
 
-    if (document.getElementById("hot").checked) {
-        LA += 1;
-        Miami += 1;
-    } else if (document.getElementById("cold").checked) {
-        Chicago += 1;
+    if (document.getElementById("8").checked) {
+        Spider += 1;
+    } else if (document.getElementById("2").checked) {
+        Human += 1;
+        Fish  += 1;
     } else {
-        Seattle += 1;
+        Plankton += 1;
     }
 
-    if (document.getElementById("bus").checked) {
-        Miami += 1;
-    } else if (document.getElementById("car").checked) {
-        LA += 1;
+    if (document.getElementById("Walk").checked) {
+        Human += 1;
+        Job +=1;
+        Spider += 1;
+    } else if (document.getElementById("Fly").checked) {
+        Job += 1;
     } else {
-        Seattle += 1;
-        Chicago += 1;
+        Fish += 1;
+        Plankton += 1;
     }
 
-    if (document.getElementById("walk").checked) {
-        Seattle += 1;
-        Miami += 1;
-    } else if (document.getElementById("drive").checked) {
-        LA += 1;
+    if (document.getElementById("Yes").checked) {
+        Human += 1;
+        Spider += 1;
+    } else if (document.getElementById("No").checked) {
+        Fish += 1;
+        Plankton += 1;
     } else {
-        Chicago += 1;
+        Job += 1;
+    }
+
+    if (document.getElementById("Fight back").checked) {
+        Human += 1;
+        Spider += 1;
+    } else if (document.getElementById("Run").checked) {
+        Fish += 1;
+        Plankton += 1;
+    } else {
+        Job += 1;
+    }
+
+    if (document.getElementById("Of course").checked) {
+        Human += 1;
+        Job += 1;
+    } else if (document.getElementById("Probably not").checked) {
+        Fish += 1;
+        Spider += 1;
+    } else {
+        Plankton += 1;
+        Job += 1;
     }
 
     resetResult();
 
-    if (LA > Seattle && LA > Miami && LA > Chicago) {
+    if (Fish > Plankton && Fish > Human && Fish > Job && Fish > Spider) {
         document.getElementById("LAResult").style.display = "block";
-    } else if (Seattle > LA && Seattle > Miami && Seattle > Chicago) {
+    } else if (Plankton > Fish && Plankton > Human && Plankton > Job && Plankton > Spider) {
         document.getElementById("SeattleResult").style.display = "block";
-    } else if (Miami > LA && Miami > Seattle && Miami > Chicago) {
+    } else if (Human > Fish && Human > Job && Human > Plankton && Human > Spider) {
         document.getElementById("MiamiResult").style.display = "block";
+    } else if (Spider > Fish && Spider > Human && Spider > Job && Spider > Plankton) {
+        document.getElementById("SpiderResult").style.display = "block";
     } else {
         document.getElementById("ChicagoResult").style.display = "block";
     }
