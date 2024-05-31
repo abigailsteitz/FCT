@@ -1,6 +1,6 @@
 body {
   font-family: arial;
-  background-color: tomato;
+  background-color: rgb(39, 39, 39);
   color: white;
 }
 
@@ -22,9 +22,17 @@ button {
   border-radius: 5px;
 }
 
-#LAResult,
-#SeattleResult,
-#MiamiResult,
-#ChicagoResult {
+#SpaceWResult,
+#BloodaResult,
+#NightResult,
+#WhiteResult,
+#DeathgResult,
+#IwarriorResult,
+#DarkAResult,
+#KhorneResult,
+#SalamanderResult,
+#UltraResult,
+#BlackLResult,
+#AlphaResult {
   display: none;
 }

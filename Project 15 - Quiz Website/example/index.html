@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--This is the title at the top of your browser tab. Search engines will also use this to display to users-->
-  <title>Quiz Website</title>
+  <title>Space Marine Chapter Quiz</title>
   <!--This tag brings in the CSS you write to add style to your webpage-->
   <link rel="stylesheet" href="main.css" />
   <!--This tag brings in the JavaScript you write to add behavior to your webpage-->
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <h1>What city should you move to? Take this quiz to find out!</h1>
+  <h1>What chapter of the space marines are you?</h1>
 
   <h2>Question 1: Do you prefer hot weather or cold weather?</h2>
   <input type="radio" name="temp" id="hot">
@@ -25,40 +25,87 @@
   <input type="radio" name="temp" id="mix">
   <label>A mixture</label>
 
-  <h2>Question 2: How do you like to travel?</h2>
-  <input type="radio" name="travel" id="bus">
-  <label>Public transportation</label><br>
-  <input type="radio" name="travel" id="car">
-  <label>Car</label><br>
-  <input type="radio" name="travel" id="bike">
-  <label>Bicycle</label>
+  <h2>Question 2: What is your preferred weapon?</h2>
+  <input type="radio" name="travel" id="Axe">
+  <label>Axe</label><br>
+  <input type="radio" name="travel" id="Gun">
+  <label>Gun</label><br>
+  <input type="radio" name="travel" id="Sword">
+  <label>Sword</label>
 
-  <h2>Question 3: How close do you need to be to the ocean?</h2>
-  <input type="radio" name="ocean" id="walk">
-  <label>Walking distance</label><br>
-  <input type="radio" name="ocean" id="drive">
-  <label>Driving distance</label><br>
-  <input type="radio" name="ocean" id="notclose">
-  <label>Doesn't matter to me</label><br><br>
+  <h2>Question 3: What posistion do/would you play in sports?</h2>
+  <input type="radio" name="ocean" id="Offence">
+  <label>Offence</label><br>
+  <input type="radio" name="ocean" id="Defence">
+  <label>Defence</label><br>
+  <input type="radio" name="ocean" id="IDK">
+  <label>IDK</label><br><br>
+
+  <h2>Question 4: How are you doing today?</h2>
+  <input type="radio" name="feel" id="Good">
+  <label>Good</label><br>
+  <input type="radio" name="feel" id="Bad">
+  <label>Bad</label><br><br>
+
+  <h2>Question 5: What is the best color?</h2>
+  <input type="radio" name="color" id="Red">
+  <label>Red</label><br>
+  <input type="radio" name="color" id="Blue">
+  <label>Blue</label><br>
+  <input type="radio" name="color" id="Green">
+  <label>Green</label><br>
+  <input type="radio" name="color" id="White">
+  <label>White</label><br>
+  <input type="radio" name="color" id="Black">
+  <label>Black</label><br><br>
 
   <button onclick="seeResult()">See Result</button>
-  <div id="LAResult">
-    <h1>You should move to... Los Angeles!</h1>
-    <img src='LA.avif'>
+  <div id="KhorneResult">
+    <h1>You are a World Eater/Khorne berzerkers!</h1>
+    <img src='Khorne.webp'>
   </div>
-  <div id="SeattleResult">
-    <h1>You should move to... Seattle!</h1>
-    <img src='Seattle.jpeg'>
+  <div id="SpaceWResult">
+    <h1>You are a Space Wolf!</h1>
+    <img src='SpaceW.jpg'>
   </div>
-  <div id="MiamiResult">
-    <h1>You should move to... Miami!</h1>
-    <img src='Miami.jpg'>
+  <div id="BloodaResult">
+    <h1>You are A Blood Angel!</h1>
+    <img src='Blood_Angel.webp'>
   </div>
-  <div id="ChicagoResult">
-    <h1>You should move to... Chicago!</h1>
-    <img
-      src='Chicago.jpeg'>
+  <div id="NightResult">
+    <h1>You are a night lord!</h1>
+    <img src='Night.jpg'>
   </div>
-
-
+  <div id="WhiteResult">
+    <h1>You are a White Scar!</h1>
+    <img src='Whitescar.jpg'>
+  </div>
+  <div id="DeathgResult">
+    <h1>You are a Death Gaurd!</h1>
+    <img src='DeathG.jpg'>
+  </div>
+  <div id="IwarriorResult">
+    <h1>You are a Iron Warrior!</h1>
+    <img src='ironwarrior.jpg'>
+  </div>
+  <div id="DarkAResult">
+    <h1>You are a Dark Angel!</h1>
+    <img src='DarkAngel.webp'>
+  </div>
+  <div id="SalamanderResult">
+    <h1>You are a Salamander!</h1>
+    <img src='salamander.jpg'>
+  </div>
+  <div id="UltraResult">
+    <h1>You are a Ultra Marine!</h1>
+    <img src='Ultra.jpg'>
+  </div>
+  <div id="BlackLResult">
+    <h1>You are a Black Legionnaire</h1>
+    <img src='Black2.jpg'>
+  </div>
+  <div id="AlphaResult">
+    <h1>You are a member of the Alpha Legion</h1>
+    <img src='Alpha.webp'>
+  </div>
 </body>
