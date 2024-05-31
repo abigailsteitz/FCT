@@ -2,54 +2,72 @@
 'use strict';
 
 function resetResult() {
-    document.getElementById("LAResult").style.display = "none";
-    document.getElementById("SeattleResult").style.display = "none";
-    document.getElementById("MiamiResult").style.display = "none";
-    document.getElementById("ChicagoResult").style.display = "none";
+    document.getElementById("DogResult").style.display = "none";
+    document.getElementById("CatResult").style.display = "none";
+    document.getElementById("FishResult").style.display = "none";
+    document.getElementById("RatResult").style.display = "none";
 }
 
 function seeResult() {
-    var LA = 0;
-    var Seattle = 0;
-    var Miami = 0;
-    var Chicago = 0;
+    var Dog = 0;
+    var Cat = 0;
+    var Fish = 0;
+    var Rat = 0;
 
-    if (document.getElementById("hot").checked) {
-        LA += 1;
-        Miami += 1;
-    } else if (document.getElementById("cold").checked) {
-        Chicago += 1;
+    if (document.getElementById("Lots!").checked) {
+        Dog += 1;
+    } else if (document.getElementById("A good amount").checked) {
+        Cat += 1;
     } else {
-        Seattle += 1;
+        Rat += 1;
+        Fish += 1;
     }
 
-    if (document.getElementById("bus").checked) {
-        Miami += 1;
-    } else if (document.getElementById("car").checked) {
-        LA += 1;
+    if (document.getElementById("Yes").checked) {
+        Fish += 1;
+    } else if (document.getElementById("Sometimes").checked) {
+        Cat += 1;
+        Rat += 1
     } else {
-        Seattle += 1;
-        Chicago += 1;
+        Dog += 1;
     }
 
-    if (document.getElementById("walk").checked) {
-        Seattle += 1;
-        Miami += 1;
-    } else if (document.getElementById("drive").checked) {
-        LA += 1;
+    if (document.getElementById("I want to be around them 24/7!").checked) {
+        Dog += 1;
+        Rat += 1;
+    } else if (document.getElementById("It's ok").checked) {
+        Cat += 1;
     } else {
-        Chicago += 1;
+        Fish += 1;
     }
+
+    if (document.getElementById("Yes").checked) {
+        Dog += 1;
+    } else if (document.getElementById("Medium is better").checked) {
+        Cat += 1;
+    } else {
+        Rat += 1;
+        Fish += 1;
+    }
+
+    if (document.getElementById("Forever!").checked) {
+        Dog += 1;
+        Cat += 1;
+    } else if (document.getElementById("Not long").checked) {
+        Fish += 1;
+        Rat += 1;
+    }
+
 
     resetResult();
 
-    if (LA > Seattle && LA > Miami && LA > Chicago) {
-        document.getElementById("LAResult").style.display = "block";
-    } else if (Seattle > LA && Seattle > Miami && Seattle > Chicago) {
-        document.getElementById("SeattleResult").style.display = "block";
-    } else if (Miami > LA && Miami > Seattle && Miami > Chicago) {
-        document.getElementById("MiamiResult").style.display = "block";
+    if (Dog > Cat && Dog > Fish && Dog > Rat) {
+        document.getElementById("DogResult").style.display = "block";
+    } else if (Cat > Dog && Cat > Fish && Cat > Rat) {
+        document.getElementById("CatResult").style.display = "block";
+    } else if (Fish > Dog && Fish > Cat && Fish > Rat) {
+        document.getElementById("FishResult").style.display = "block";
     } else {
-        document.getElementById("ChicagoResult").style.display = "block";
+        document.getElementById("RatResult").style.display = "block";
     }
 }

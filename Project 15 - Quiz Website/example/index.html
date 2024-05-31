@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--This is the title at the top of your browser tab. Search engines will also use this to display to users-->
-  <title>Quiz Website</title>
+  <title>Pet quiz</title>
   <!--This tag brings in the CSS you write to add style to your webpage-->
   <link rel="stylesheet" href="main.css" />
   <!--This tag brings in the JavaScript you write to add behavior to your webpage-->
@@ -15,49 +15,63 @@
 </head>
 
 <body>
-  <h1>What city should you move to? Take this quiz to find out!</h1>
+  <h1>What pet should you get?</h1>
 
-  <h2>Question 1: Do you prefer hot weather or cold weather?</h2>
-  <input type="radio" name="temp" id="hot">
-  <label>Hot</label><br>
-  <input type="radio" name="temp" id="cold">
-  <label>Cold</label><br>
-  <input type="radio" name="temp" id="mix">
-  <label>A mixture</label>
+  <h2>Question 1: How much space do you have where you live? (house size/ backyard)?</h2>
+  <input type="radio" name="space" id="Lots!">
+  <label>Lots!</label><br>
+  <input type="radio" name="space" id="A good amount">
+  <label>A good amount</label><br>
+  <input type="radio" name="space" id="Not much">
+  <label>Not much</label>
 
-  <h2>Question 2: How do you like to travel?</h2>
-  <input type="radio" name="travel" id="bus">
-  <label>Public transportation</label><br>
-  <input type="radio" name="travel" id="car">
-  <label>Car</label><br>
-  <input type="radio" name="travel" id="bike">
-  <label>Bicycle</label>
+  <h2>Question 2: Do you travel a lot?</h2>
+  <input type="radio" name="travel" id="Yes">
+  <label>Yes</label><br>
+  <input type="radio" name="travel" id="Sometimes">
+  <label>Sometimes</label><br>
+  <input type="radio" name="travel" id="Never">
+  <label>Never</label>
 
-  <h2>Question 3: How close do you need to be to the ocean?</h2>
-  <input type="radio" name="ocean" id="walk">
-  <label>Walking distance</label><br>
-  <input type="radio" name="ocean" id="drive">
-  <label>Driving distance</label><br>
-  <input type="radio" name="ocean" id="notclose">
-  <label>Doesn't matter to me</label><br><br>
+  <h2>Question 3: Do you like spending time with animals?</h2>
+  <input type="radio" name="time" id="I want to be around them 24/7!">
+  <label>I want to be around them 24/7!</label><br>
+  <input type="radio" name="time" id="It's ok">
+  <label>It's ok</label><br>
+  <input type="radio" name="time" id="Not really">
+  <label>Not really</label><br><br>
+
+  <h2>Question 4: Do you like big animals?</h2>
+  <input type="radio" name="size" id="Yes">
+  <label>Yes</label><br>
+  <input type="radio" name="size" id="Medium is better">
+  <label>Medium is better</label><br>
+  <input type="radio" name="size" id="The tinier the better!">
+  <label>The tinier the better!</label>
+
+  <h2>Question 5: How long do you want a pet?</h2>
+  <input type="radio" name="age" id="Forever!">
+  <label>Forever!</label><br>
+  <input type="radio" name="age" id="Not long">
+  <label>Not long</label><br><br>
 
   <button onclick="seeResult()">See Result</button>
-  <div id="LAResult">
-    <h1>You should move to... Los Angeles!</h1>
-    <img src='LA.avif'>
+  <div id="DogResult">
+    <h1>You should get... a dog!</h1>
+    <img src='dog.jpg'>
   </div>
-  <div id="SeattleResult">
-    <h1>You should move to... Seattle!</h1>
-    <img src='Seattle.jpeg'>
+  <div id="CatResult">
+    <h1>You should get... a cat!</h1>
+    <img src='cat.webp'>
   </div>
-  <div id="MiamiResult">
-    <h1>You should move to... Miami!</h1>
-    <img src='Miami.jpg'>
+  <div id="FishResult">
+    <h1>You should get... a fish!</h1>
+    <img src='fish.jpg'>
   </div>
-  <div id="ChicagoResult">
-    <h1>You should move to... Chicago!</h1>
+  <div id="RatResult">
+    <h1>You should get... a rat!</h1>
     <img
-      src='Chicago.jpeg'>
+      src='rat.webp'>
   </div>
 
 
