@@ -2,19 +2,15 @@
 'use strict';
 
 function secretMessage() {
-    alert("You have unlocked the secret message!")
+    alert("Wrong button? Why even try that?")
 }
-function displayDog() {
-    document.getElementById("dogContent").style.display = "block";
-    document.getElementById("catContent").style.display = "none";
+function displayJam() {
+    document.getElementById("jamContent").style.display = "block";
+    document.getElementById("butterContent").style.display = "none";
     document.getElementById("defaultContent").style.display = "none";
 }
-function displayCat() {
-    document.getElementById("dogContent").style.display = "none";
-    document.getElementById("catContent").style.display = "block";
+function displayButter() {
+    document.getElementById("jamContent").style.display = "none";
+    document.getElementById("butterContent").style.display = "block";
     document.getElementById("defaultContent").style.display = "none";
-}
-function redBackground() {
-    document.body.style.backgroundColor = "red";
-    console.log(document)
 }
