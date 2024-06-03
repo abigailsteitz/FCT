@@ -41,6 +41,23 @@ function seeResult() {
         Science += 1;
     }
 
+    if (document.getElementById("dog").checked) {
+        English += 1;
+        Math += 1;
+    } else if (document.getElementById("cat").checked) {
+        Art += 1;
+    } else {
+        Science += 1;
+    }
+
+    if (document.getElementById("earlyt").checked) {
+        Science += 1;
+        Math += 1;
+    } else if (document.getElementById("night").checked) {
+        English += 1;
+    } else {
+        Art += 1;
+    }
     resetResult();
 
     if (English > Math && English > Science && English > Art) {
