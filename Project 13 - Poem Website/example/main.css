@@ -1,20 +1,20 @@
-@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?https://fonts.google.com/specimen/Poetsen+One=Indie+Flower);
 
 body {
-  background: rgba(100, 250, 200, 0.3);
+  background: rgb(255, 110, 165);
   text-align: center;
 }
 
 h1 {
   font-size: 50px;
-  color: rgba(0, 200, 100, 1);
+  color: rgb(112, 255, 167);
 }
 
 p {
   font-size: 30px;
-  font-family: 'Indie Flower';
+  font-family: 'poetsen one';
 }
 
 img {
-  width: 30%;
+  width: 50%;
 }
