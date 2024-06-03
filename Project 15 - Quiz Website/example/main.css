@@ -22,9 +22,9 @@ button {
   border-radius: 5px;
 }
 
-#LAResult,
-#SeattleResult,
-#MiamiResult,
-#ChicagoResult {
+#CatResult,
+#DogResult,
+#JailResult,
+#DragonResult {
   display: none;
 }
