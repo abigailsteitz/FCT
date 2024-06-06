@@ -1,0 +1,84 @@
+/* Student resources:
+Classic RGB color sliders from W3Schools:
+https://www.w3schools.com/colors/colors_picker.asp
+
+Neat color picker, tones, palettes:
+https://colordesigner.io/tools
+*/
+
+/* Shared Stylings */
+main {
+	min-height: 100vh;
+  
+  .leftHandPane {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .leftHandPane a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 25px;
+      display: block;
+  }
+  
+  .rightSide {
+    padding: 120px 40px 40px 40px;
+	  min-height: 100vh;
+	  text-align: center;
+  }
+}
+
+/* Light theme */
+.light:checked ~ main {
+  /* Text color generally */
+  color: rgb(94, 255, 175);
+    
+	background-color: rgb(255, 158, 242);
+  
+  .leftHandPane {
+    background-color: rgb(170, 255, 136);
+  }
+  
+  .leftHandPane a {
+    /* Text color of the links. The more specific selector overrides the above text color. */
+    color: rgb(223, 45, 45);
+  }
+}
+
+/* Dark Theme */
+.dark:checked ~ main {
+  color: rgb(192, 22, 141);
+	background-color: rgb(53, 100, 0);
+  
+  .leftHandPane {
+    background-color: rgb(253, 255, 130);
+  }
+  
+  .leftHandPane a {
+    color: rgb(0, 2, 139);
+  }
+}
+
+/* Custom Theme */
+.custom:checked ~ main {
+  color: rgb(217,121,93);
+	background-color: rgb(0,255,78);
+  
+  .leftHandPane {
+    background-color: rgb(255,0,50);
+  }
+  
+  .leftHandPane a {
+    color: rgb(204,0,255);
+  }
+}
+
+#services,
+#clients,
+#contact {
+  display: none
+}

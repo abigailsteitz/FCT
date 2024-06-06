@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--This is the title at the top of your browser tab. Search engines will also use this to display to users-->
+  <title>strawbarrie's Poem</title>
+  <!--This tag brings in the CSS you write to add style to your webpage-->
+  <link rel="stylesheet" href="main.css" />
+  <!--This tag brings in the JavaScript you write to add behavior to your webpage-->
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <div>
+    <!--Theme switcher-->
+    <legend>Theme Switcher</legend>
+  
+    <input type="radio" class="none" id="none" name="theme" value="none" checked/>
+    <label for="light">None</label>
+    
+    <input type="radio" class="light" id="light" name="theme" value="light"/>
+    <label for="light">Light</label>
+  
+    <input type="radio" class="dark" id="dark" name="theme" value="dark" />
+    <label for="dark">Dark</label>
+  
+    <input type="radio" class="custom" id="custom" name="theme" value="custom" />
+    <label for="highContrast">Custom</label>
+    
+    <!--Main page content-->
+    <main>
+      <div class="leftHandPane">
+        <a href="#about" onclick="showAbout()">about</a>
+        <a href="#services" onclick="showServices()">Bottoms</a>
+        <a href="#clients" onclick="showClients()">Tops</a>
+        <a href="#contact" onclick="showContact()">accessorys</a>
+      </div>
+      
+      <span class="rightSide">
+        <div id="about">
+          <h1>elevate attire</h1>
+          <p>elevate your style, elevate your life. Where every stitch tells 
+            a story of hope and resilience. Our brand isn't just about clothes; 
+            it's about empowering those who dare to dream beyond their circumstances. 
+            Every purchase is a step towards dignity and self-worth. </p>
+        </div>
+        <div id="services">
+          <h1>Bottoms</h1>
+          <p>pants,shorts,skirts</p>
+          <img src="skirt.jpg" alt="">
+          <img src="shorts.webp" alt="">
+          <img src="pants.jpg" alt="">
+        </div>
+        <div id="clients">
+          <h1>Tops</h1>
+          <p>shortsleeve, longsleave,tanktop</p>
+          <img src="topp.jpg" alt="">
+          <img src="top.jpg" alt="">
+          <img src="longsleave.jpg" alt="">
+        </div>
+        <div id="contact">
+          <h1>accessorys</h1>
+          <p>shoes,bag,hats,jewlry</p>
+          <img src="jewlery.jpg" alt="">
+          <img src="bag.jpg" alt="">
+          <img src="boots.jpg" alt="">
+          <img src="hat.jpg" alt="">
+        </div>
+      </span>
+    </main>
+  </div>
+  </body>
+  </html>
