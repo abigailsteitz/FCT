@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--This is the title at the top of your browser tab. Search engines will also use this to display to users-->
+  <title>Quiz Website</title>
+  <!--This tag brings in the CSS you write to add style to your webpage-->
+  <link rel="stylesheet" href="main.css" />
+  <!--This tag brings in the JavaScript you write to add behavior to your webpage-->
+  <script src="app.js"></script>
+</head>
+<!--English, Art, Science, Math-->
+<body>
+  <h1>What color should you dye your hair? Take this quiz to find out!</h1>
+
+  <h2>Question 1: Do you prefer warm or cool colors?</h2>
+  <input type="radio" name="colors" id="warm">
+  <label>warm</label><br>
+  <input type="radio" name="colors" id="cool">
+  <label>cool</label><br>
+  <input type="radio" name="colors" id="nope">
+  <label>I hate color</label>
+
+  <h2>Question 2: What's your favorite season?</h2>
+  <input type="radio" name="season" id="fall">
+  <label>fall</label><br>
+  <input type="radio" name="season" id="winter">
+  <label>winter</label><br>
+  <input type="radio" name="season" id="spring">
+  <label>spring</label><br>
+  <input type="radio" name="season" id="summer">
+  <label>summer</label>
+
+  <h2>Question 3: Do you prefer gold or silver jewelry?</h2>
+  <input type="radio" name="jewelry" id="gold">
+  <label>gold</label><br>
+  <input type="radio" name="jewelry" id="silver">
+  <label>silver</label><br>
+  <input type="radio" name="jewelry" id="ew">
+  <label>ew no</label><br><br>
+
+  <h2>Question 4: What's your favorite school subject?</h2>
+  <input type="radio" name="school" id="math">
+  <label>math</label><br>
+  <input type="radio" name="school" id="english">
+  <label>english</label><br>
+  <input type="radio" name="school" id="art">
+  <label>art</label><br><br>
+
+  <h2>Question 5: Do prefer visual, performing, or no art?</h2>
+  <input type="radio" name="art" id="visual">
+  <label>visual</label><br>
+  <input type="radio" name="art" id="perform">
+  <label>performig</label><br>
+  <input type="radio" name="art" id="nope">
+  <label>no thanks</label><br><br>
+
+  <button onclick="seeResult()">See Result</button>
+  <div id="RedResult">
+    <h1>You should dye your hair...Red!</h1>
+    <img src='Red.jpg'>
+  </div>
+  <div id="PinkResult">
+    <h1>You shoudl dye your hair...Pink!</h1>
+    <img src='Pink.jpg'>
+  </div>
+  <div id="BlueResult">
+    <h1>You should dye your hair...Blue!</h1>
+    <img src='Blue.jpg'>
+  </div>
+  <div id="SilverResult">
+    <h1>You should dye your hair...Silver!</h1>
+    <img
+      src='Silver.jpg'>
+  </div>
+
+
+</body>

@@ -1,0 +1,30 @@
+body {
+  font-family: arial;
+  background-color: rgb(71, 114, 255);
+  color: white;
+}
+
+img {
+  width: 50%;
+  border: 10px double white;
+}
+
+h1 {
+  text-shadow: 3px 3px gray;
+  font-family: 'Franklin Gothic Medium';
+}
+
+button {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#RedResult,
+#PinkResult,
+#BlueResult,
+#SilverResult {
+  display: none;
+}
