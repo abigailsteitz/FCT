@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+body {
+  background: rgb(12, 138, 69);
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  color: rgb(70, 50, 8);
+}
+
+p {
+  font-size: 30px;
+  font-family:'Dancing Script';
+}
+#water{
+  width: 100%;
+  height: 100%;
+}
+
+#chair{
+  width: 5%;
+  height: 5%;
+}
+
+
+#growbutton {
+  width: 100px;
+  height: 100px;
+}
