@@ -1,0 +1,67 @@
+body {
+    text-align: center;
+    font-family: arial;
+    background-color: rgb(236, 175, 255);
+    color: white;
+    font-size: 25px;
+  }
+  
+  img {
+    width: 50%;
+    height: 50%;
+    margin-top: 15px;
+  }
+  
+  #blueButton {
+    background-color: white;
+    color: rgb(127, 189, 255);
+    font-size: 20px;
+    margin: 10px;
+  }
+  
+  #defaultContent {
+    display: block;
+  }
+  
+  #CarContent {
+    display: none;
+  }
+  
+  #DrinkContent {
+    display: none;
+  }
+
+  img {
+    width: 50%;
+    border: 15px double white;
+  }
+  
+  h1 {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 50px;
+  }
+  
+  button {
+    background-color: gray;
+    color: white;
+    padding: 10px 15px;
+    font-size: 25px;
+    border-radius: 5px;
+  }
+  
+  #BikeResult,
+  #ClownResult,
+  #FerrariResult,
+  #KidResult,
+  #JeepResult,
+  #MonsterResult {
+    display: none;
+  }
+
+
+#SmoothieResult,
+#SwampResult,
+#WaterResult,
+#TempleResult {
+  display: none;
+}

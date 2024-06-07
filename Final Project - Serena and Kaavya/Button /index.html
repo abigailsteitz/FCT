@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--This is the title at the top of your browser tab. Search engines will also use this to display to users-->
+  <title>Business Website</title>
+  <!--This tag brings in the CSS you write to add style to your webpage-->
+  <link rel="stylesheet" href="main.css" />
+  <!--This tag brings in the JavaScript you write to add behavior to your webpage-->
+  <script src="app.js"></script>
+</head>
+<body>
+  <button onclick="secretMessage()">CLICK ME</button>
+  <br>
+  <button onclick="displayCar()">Car</button>
+  <button onclick="displayDrink()">Drink</button>
+  <br>
+  <button id="blueButton" onclick="blueBackground()">BLUE</button>
+  
+  <div id="defaultContent">
+    Find out which car or drink you are!
+  </div>
+  <div id="CarContent">
+    <body>
+      <h1>What car should you get? Lets find out!</h1>
+    
+      <h2>Question 1: What color do you want your car to be?</h2>
+      <input type="radio" name="color" id="red">
+      <label>Red</label><br>
+      <input type="radio" name="color" id="pink">
+      <label>Pink</label><br>
+      <input type="radio" name="color" id="green">
+      <label>Green</label>
+      <input type="radio" name="color" id="blue">
+      <label>Blue</label>
+    
+      <h2>Question 2: What will you use your car for?</h2>
+      <input type="radio" name="use" id="run">
+      <label>Running stuff over</label><br>
+      <input type="radio" name="use" id="show">
+      <label>Showing off</label><br>
+      <input type="radio" name="use" id="places">
+      <label>Getting places</label><br>
+      <input type="radio" name="use" id="friends">
+      <label>Picking up friends</label><br>
+      <input type="radio" name="use" id="exploring">
+      <label>Exploring places</label><br>
+     
+    
+      <h2>Question 3: How many people do you need to fit in your car?</h2>
+      <input type="radio" name="people" id="me">
+      <label>Just myself</label><br>
+      <input type="radio" name="people" id="two">
+      <label>Two seats</label><br>
+      <input type="radio" name="people" id="no one">
+      <label>No one else gets to come in my car</label><br>
+      <input type="radio" name="people" id="Many">
+      <label>As many people as possible</label><br>
+    
+    
+      <h2>Question 4: Where will you go with your car?</h2>
+      <input type="radio" name="place" id="park">
+      <label>A park</label><br>
+      <input type="radio" name="place" id="junk">
+      <label>Junk yard</label><br>
+      <input type="radio" name="place" id="mcdonalds">
+      <label>Mcdonalds</label><br>
+      <input type="radio" name="place" id="circus">
+      <label>The circus</label><br>
+      <input type="radio" name="place" id="party">
+      <label>Parties</label><br>
+    
+      <h2>Question 5: What will you do in your car?</h2>
+      <input type="radio" name="do" id="eat">
+      <label>Eat food</label><br>
+      <input type="radio" name="do" id="friends">
+      <label>Talk to friends</label><br>
+      <input type="radio" name="do" id="nothing">
+      <label>Nothing</label><br>
+      <input type="radio" name="do" id="music">
+      <label>Listen to music</label><br>
+      <input type="radio" name="do" id="speed">
+      <label>Speed</label><br>
+    
+    
+      <button onclick="seeResult()">See Result</button>
+      <div id="BikeResult">
+        <h1>Here's your car!</h1>
+        <img src='Bike.jpg'>
+      </div>
+      <div id="ClownResult">
+        <h1>Here's your car!</h1>
+        <img src='ClownCar.png'>
+      </div>
+      <div id="FerrariResult">
+        <h1>Here's your car!</h1>
+        <img src='Ferrari.png'>
+      </div>
+      <div id="KidResult">
+        <h1>Here's your car!</h1>
+        <img src='KidCar.png'>
+      </div>
+      <div id="JeepResult">
+        <h1>Here's your car!</h1>
+        <img src='KidJeep.png'>
+      </div>
+      <div id="MonsterResult">
+        <h1>Here's your car!</h1>
+        <img
+          src='Monster.jpg'>
+      </div>
+    </body>
+  </div>
+  <div id="DrinkContent">
+    <body>
+      <h1>What drink are you? Take this quiz to find out!</h1>
+    
+      <h2>Question 1: Do you prefer hot weather or cold weather?</h2>
+      <input type="radio" name="temp" id="hot">
+      <label>Hot</label><br>
+      <input type="radio" name="temp" id="cold">
+      <label>Cold</label><br>
+      <input type="radio" name="temp" id="mix">
+      <label>Both</label>
+    
+      <h2>Question 2: What is your favorite color?</h2>
+      <input type="radio" name="color" id="pink">
+      <label>Pink</label><br>
+      <input type="radio" name="color" id="blue">
+      <label>Blue</label><br>
+      <input type="radio" name="color" id="green">
+      <label>Green</label>
+      <input type="radio" name="color" id="purple">
+      <label>Purple</label>
+    
+      <h2>Question 3: What is your favorite type of candy?</h2>
+      <input type="radio" name="candy" id="chocolate">
+      <label>Chocolate</label><br>
+      <input type="radio" name="candy" id="gummy">
+      <label>Gummies</label><br>
+      <input type="radio" name="candy" id="sour">
+      <label>Sour</label><br><br>
+      <input type="radio" name="candy" id="hard">
+      <label>Hard Candy</label><br><br>
+    
+      <h2>Question 4: Which place do you prefer?</h2>
+      <input type="radio" name="place" id="beach">
+      <label>Beach</label><br>
+      <input type="radio" name="place" id="mountain">
+      <label>Mountains</label><br>
+      <input type="radio" name="place" id="forest">
+      <label>Forest</label><br><br>
+      <input type="radio" name="place" id="waterfall">
+      <label>Waterfalls</label><br><br>
+    
+      <h2>Question 5: What is your favorite activity?</h2>
+      <input type="radio" name="activity" id="hiking">
+      <label>Hiking</label><br>
+      <input type="radio" name="activity" id="sports">
+      <label>Playing Sports</label><br>
+      <input type="radio" name="activity" id="friends">
+      <label>Hanging Out With Friends</label><br><br>
+      <input type="radio" name="activity" id="games">
+      <label>Playing Video Games</label><br><br>
+      
+      <button onclick="seeResult()">See Result</button>
+      <div id="SmoothieResult">
+        <h1>Your drink is a... Smoothie!</h1>
+        <img src='smoothie.jpeg'>
+      </div>
+      <div id="SwampResult">
+        <h1>Your drink is... Swamp Water!</h1>
+        <img src='swamp.jpeg'>
+      </div>
+      <div id="WaterResult">
+        <h1>Your drink is... Water!</h1>
+        <img src='water.jpg'>
+      </div>
+      <div id="TempleResult">
+        <h1>Your drink is a... Shirley Temple!</h1>
+        <img
+          src='temple.jpg'>
+      </div>
+    </body>
+  </div>
+
+</body>
