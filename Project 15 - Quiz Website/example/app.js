@@ -58,6 +58,31 @@ function seeResult() {
         Rat += 1;
     }
 
+    if (document.getElementById("Not very active, I like it inside").checked) {
+        Fish += 1;
+        Rat += 1
+    } else if (document.getElementById("I like going on walks sometimes").checked) {
+        Cat += 1;
+    } else {
+        Dog += 1;
+    }
+
+    if (document.getElementById("Yes").checked) {
+        Dog += 1;
+        Cat += 1
+    } else {
+        Fish += 1;
+        Rat += 1;
+    }
+    
+    if (document.getElementById("I hate it").checked) {
+        Fish += 1;
+    } else if (document.getElementById("It's tolerable").checked) {
+        Rat += 1
+    } else {
+        Dog += 1;
+        Cat += 1;
+    }
 
     resetResult();
 
