@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--This is the title at the top of your browser tab. Search engines will also use this to display to users-->
+  <title>Haiku Helper</title>
+  <!--This tag brings in the CSS you write to add style to your webpage-->
+  <link rel="stylesheet" href="main.css" />
+  <!--This tag brings in the JavaScript you write to add behavior to your webpage-->
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <h1>Haiku Helper!</h1>
+
+  <h2>Pick An Animal For Your Topic:</h2>
+  <input onclick="ShowDog()" type="radio" name="Topic" id="Dog">
+  <label>Dog</label><br>
+  <input onclick="ShowCat()" type="radio" name="Topic" id="Cat">
+  <label>Cat</label><br>
+
+<div id="DogQ">
+  <h2>Pick Line 1</h2>
+  <input type="radio" name="Line1" id="Dogblah1">
+  <label id="Option1">onward to the park</label><br>
+  <input type="radio" name="Line1" id="Dogblah2">
+  <label id="Option2">You are home at last</label><br>
+  <input type="radio" name="Line1" id="Dogblah3">
+  <label id="Option3">It is the morning </label>
+
+  
+  <h2>Pick Line 2</h2>
+  <input type="radio" name="Line2" id="Dogblah4">
+  <label id="Option1A">the dog wants to play a game</label><br>
+  <input type="radio" name="Line2" id="Dogblah5">
+  <label id="Option2A">my tail is wagging so fast</label><br>
+  <input type="radio" name="Line2" id="Dogblah6">
+  <label id="Option3A">come on human, grab the leash
+  </label><br><br>
+
+  <h2>Pick Line 3</h2>
+  <input type="radio" name="Line3" id="Dogblah7">
+  <label id="Option1B">time to find a stick</label><br>
+  <input type="radio" name="Line3" id="Dogblah8">
+  <label id="Option2B">feed me right now please</label><br>
+  <input type="radio" name="Line3" id="Dogblah9">
+  <label id="Option3B">it's time for walkies</label><br><br>
+
+  <button onclick="ShowDogResult()">Dog Haiku</button>
+  <div id="DogR">
+   <h1 id="S1">sentence1</h1>
+   <h1 id="S2">sentence2</h1>
+   <h1 id="S3">sentence3</h1>
+  <img src='DogGroup.jpg'>
+  </div>
+</div>
+
+<div id="CatQ">
+  <h2>Pick Line 1</h2>
+  <input type="radio" name="Line1" id="Catblah1">
+  <label id="Option11">the toy mouse speeds past</label><br>
+  <input type="radio" name="Line1" id="Catblah2">
+  <label id="Option22">the sun is shining</label><br>
+  <input type="radio" name="Line1" id="Catblah3">
+  <label id="Option33">swinging the feather</label><br><br>
+
+  <h2>Pick Line 2</h2>
+  <input type="radio" name="Line2" id="Catblah4">
+  <label id="Option11A">followed by the pitter pat</label><br>
+  <input type="radio" name="Line2" id="Catblah5">
+  <label id="Option22A">and the floor is nice and warm</label><br>
+  <input type="radio" name="Line2" id="Catblah6">
+  <label id="Option33A">the cat is watching closely </label><br><br>
+
+  <h2>Pick Line 3</h2>
+  <input type="radio" name="Line3" id="Catblah7">
+  <label id="Option11B">of a hungry cat</label><br>
+  <input type="radio" name="Line3" id="Catblah8">
+  <label id="Option22B">it is cat naptime</label><br>
+  <input type="radio" name="Line3" id="Catblah9">
+  <label id="Option33B">the perfect timing</label><br><br>
+
+  <button onclick="ShowCatResult()">Cat Haiku</button>
+  <div id="CatR">
+  <h1 id="S1C">sentence1C</h1>
+  <h1 id="S2C">sentence2C</h1>
+  <h1 id="S3C">sentence3C</h1>
+  <img src='CatGroup.jpg'>
+  </div>
+</div>
+
+
+
+
