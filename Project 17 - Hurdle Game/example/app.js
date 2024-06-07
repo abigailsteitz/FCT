@@ -15,6 +15,7 @@ var counter = 0;
 var playing = true;
 var playerSize = 30;
 var hurdleSize = 50;
+var score = 0
 
 function drawSquare(xPosition, yPosition, size, color) {
     pen.beginPath();
@@ -30,8 +31,9 @@ function keyDownHandler(e) {
             ySpeed -= 19;
         }
     } else if (e.keyCode == 82) { // 'r' for restart
-        hurdles.shift();
+        hurdles=[];
         playing = true;
+        score=0
     }
 }
 
@@ -58,7 +60,7 @@ function createHurdle() {
 function updateHurdles() {
     if (counter <= 0) {
         createHurdle();
-        counter = Math.floor(Math.random() * 50 + 20);
+        counter = Math.floor(Math.random() * 50 + 35);
     }
     counter -= 1;
     for (var i = 0; i < hurdles.length; i++) {
@@ -79,11 +81,15 @@ function checkCollision() {
         var hurdleRight = hurdle.xPosition + hurdleSize;
         var hurdleTop = hurdle.yPosition;
         var hurdleBottom = hurdle.yPosition + hurdleSize;
-        /* 
+        
+        if (playerRight > hurdleLeft & playerBottom > hurdleTop & playerLeft < hurdleRight){
+            playing = false;
+        /*
         Write if statements here, using the variables above, 
         to check whether the player and the hurdle are touching
         and set playing to false.
         */
+        }
     }
 }
 
@@ -93,6 +99,10 @@ function update() {
         updatePlayer();
         updateHurdles();
         checkCollision();
+        score+=1
+        pen.font = "10px Arial";
+        pen.fillStyle = "white";
+        pen.fillText( score, 10, 10);
     } else {
         pen.font = "30px Arial";
         pen.fillStyle = "red";
@@ -112,5 +122,4 @@ function initialSetup() {
     // Triggers the main function every 10 milliseconds
     setInterval(update, 30);
 }
-
-addEventListener("load", (event) => initialSetup());
+addEventListener("load", (event) => initialSetup())

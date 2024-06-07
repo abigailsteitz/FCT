@@ -51,7 +51,7 @@ function seeResult() {
         Khorne += 1;
         SpaceW += 1;
         Deathg += 1;
-    } else if (document.getElementById("Gun").checked) {
+    } else if (document.getElementById("Bow").checked) {
         Salamander += 1;
         Iwarriors += 1;
     } else {
@@ -88,7 +88,7 @@ function seeResult() {
         Salamander += 2;
         Ultra += 2;
         White += 2;
-    } else if (document.getElementById("Bad").checked) {
+    } else if (document.getElementById("Mediocre").checked) {
         Deathg += 2;
         Iwarriors += 2;
         Khorne += 2;
