@@ -32,16 +32,17 @@ function keyDownHandler(e) {
     } else if (e.keyCode == 82) { // 'r' for restart
         hurdles.shift();
         playing = true;
+        
     }
 }
 
 addEventListener("keydown", keyDownHandler, false);
 
 function updatePlayer() {
-    ySpeed += 1;
+    ySpeed += Math.random() * 1 + 1.1;
     yPosition += ySpeed;
     if (yPosition >= (canvas.height - playerSize)) {
-        ySpeed = 0;
+        ySpeed = Math.random() * 1 + 1.5;
         yPosition = canvas.height - playerSize;
     }
     drawSquare(xPosition, yPosition, playerSize, 'cyan');
@@ -58,12 +59,12 @@ function createHurdle() {
 function updateHurdles() {
     if (counter <= 0) {
         createHurdle();
-        counter = Math.floor(Math.random() * 50 + 20);
+        counter = Math.floor(Math.random() * 25 + 40);
     }
     counter -= 1;
     for (var i = 0; i < hurdles.length; i++) {
         var hurdle = hurdles[i];
-        hurdle.xPosition -= 7;
+        hurdle.xPosition -= 30;
         drawSquare(hurdle.xPosition, hurdle.yPosition, hurdleSize, 'orange');
     }
 }
@@ -79,14 +80,16 @@ function checkCollision() {
         var hurdleRight = hurdle.xPosition + hurdleSize;
         var hurdleTop = hurdle.yPosition;
         var hurdleBottom = hurdle.yPosition + hurdleSize;
+    
+    if(playerRight > hurdleLeft && playerBottom > hurdleTop && playerTop < hurdleBottom && playerLeft < hurdleRight) {
+        playing=false}
+   
+}} 
         /* 
         Write if statements here, using the variables above, 
         to check whether the player and the hurdle are touching
         and set playing to false.
         */
-    }
-}
-
 function update() {
     if (playing) {
         pen.clearRect(0, 0, canvas.width, canvas.height);
@@ -94,17 +97,17 @@ function update() {
         updateHurdles();
         checkCollision();
     } else {
-        pen.font = "30px Arial";
-        pen.fillStyle = "red";
-        pen.fillText("GAME OVER, press 'r' to restart", 10, 50);
+        pen.font = "50px Comfortaa";
+        pen.fillStyle = "white";
+        pen.fillText("GAME OVER, press 'r' to restart", 600, 300);
     }
 }
 
 function initialSetup() {
     // set up canvas
     canvas = document.getElementById("canvas");
-    canvas.height = 200;
-    canvas.width = 600;
+    canvas.height = 900;
+    canvas.width = 1905;
 
     // set up the pen
     pen = canvas.getContext("2d");
@@ -113,4 +116,4 @@ function initialSetup() {
     setInterval(update, 30);
 }
 
-addEventListener("load", (event) => initialSetup());
+addEventListener("load", (event) => initialSetup())
