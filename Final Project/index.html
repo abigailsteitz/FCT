@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Music Genre + Information</title>
+  <link rel="stylesheet" href="main.css" />
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <h1>What music genre should you give a listen?</h1>
+
+  <h2>Question 1: Who's your favorite out of the top 5 artists on Spotify?</h2>
+  <input type="radio" name="spotify" id="theweeknd">
+  <label>The Weeknd</label><br>
+  <input type="radio" name="spotify" id="taylorswift">
+  <label>Taylor Swift</label><br>
+  <input type="radio" name="spotify" id="postmalone">
+  <label>Post Malone</label><br>
+  <input type="radio" name="spotify" id="billieeilish">
+  <label>Billie Eilish</label><br>
+  <input type="radio" name="spotify" id="rihanna">
+  <label>Rihanna</label>
+
+  <h2>Question 2: What's your favorite of the top 5 most streamed artists on Spotify?</h2>
+  <input type="radio" name="streamed" id="taylorSwift">
+  <label>Taylor Swift</label><br>
+  <input type="radio" name="streamed" id="drake">
+  <label>Drake</label><br>
+  <input type="radio" name="streamed" id="badbunny">
+  <label>Bad Bunny</label><br>
+  <input type="radio" name="streamed" id="theWeeknd">
+  <label>The Weeknd</label><br>
+  <input type="radio" name="streamed" id="edsheeran">
+  <label>Ed Sheeran</label>
+
+  <h2>Question 3: Pick a 2013 star</h2>
+  <input type="radio" name="2013" id="macklemore">
+  <label>Macklemore</label><br>
+  <input type="radio" name="2013" id="coldplay">
+  <label>Coldplay</label><br>
+  <input type="radio" name="2013" id="eminem">
+  <label>Eminem</label><br>
+  <input type="radio" name="2013" id="katyperry">
+  <label>Katy Perry</label><br>
+  <input type="radio" name="2013" id="avicii">
+  <label>Avicii</label>
+
+  <h2>Question 4: Pick a song that got popular off TikTok</h2>
+  <input type="radio" name="tiktok" id="driverslicense">
+  <label>Driver's License by Olivia Rodrigo</label><br>
+  <input type="radio" name="tiktok" id="kissmemore">
+  <label>Kiss Me More by Doja Cat and SZA</label><br>
+  <input type="radio" name="tiktok" id="dancemonkey">
+  <label>Dance Monkey by Tones and I</label><br>
+  <input type="radio" name="tiktok" id="telepatia">
+  <label>Telepatía by Kali Uchis</label><br>
+  <input type="radio" name="tiktok" id="myuniverse">
+  <label>My Universe by BTS and Coldplay</label>
+
+  <h2>Question 5: Whose music is your favorite out of these cancelled artists?</h2>
+  <input type="radio" name="cancelled" id="michaeljackson">
+  <label>Michael Jackson</label><br>
+  <input type="radio" name="cancelled" id="kanye">
+  <label>Kanye West</label><br>
+  <input type="radio" name="cancelled" id="rkelly">
+  <label>R Kelly</label><br>
+  <input type="radio" name="cancelled" id="lanadelrey">
+  <label>Lana Del Rey</label><br>
+  <input type="radio" name="cancelled" id="morganwallen">
+  <label>Morgan Wallen</label>
+
+  <h2>Question 6: What's your favorite trending aesthetic?</h2>
+  <input type="radio" name="aesthetic" id="cottagecore">
+  <label>Cottagecore</label><br>
+  <input type="radio" name="aesthetic" id="y2k">
+  <label>Y2k</label><br>
+  <input type="radio" name="aesthetic" id="indie">
+  <label>Indie</label><br>
+  <input type="radio" name="aesthetic" id="alternative">
+  <label>Alternative</label><br>
+  <input type="radio" name="aesthetic" id="coastal">
+  <label>Coastal</label><br>
+  <input type="radio" name="aesthetic" id="oldmoney">
+  <label>Old Money</label><br>
+
+  <h2>Question 7: Out of these, what's your favorite genre?</h2>
+  <input type="radio" name="genre" id="country">
+  <label>Country</label><br>
+  <input type="radio" name="genre" id="pop">
+  <label>Pop</label><br>
+  <input type="radio" name="genre" id="rap">
+  <label>Rap</label><br>
+  <input type="radio" name="genre" id="Alternative">
+  <label>Alternative</label><br>
+  <input type="radio" name="genre" id="r&b">
+  <label>R&B</label><br><br><br>
+
+  <button onclick="seeResult()">See Result</button>
+  <div id="CountryResult">
+    <h1>You should check out...country music!</h1>
+    <h2>Here's a playlist to try:</h2>
+    <iframe style="border-radius:12px" 
+    src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZBCPUIUs2iR?utm_source=generator&theme=0" 
+    width="50%" height="700" frameBorder="0" allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy"></iframe>
+  </div>
+  <div id="PopResult">
+    <h1>You should check out...pop music!</h1>
+    <h2>Here's a playlist to try:</h2>
+    <iframe style="border-radius:12px" 
+    src="https://open.spotify.com/embed/playlist/37i9dQZF1DX9nkam6FKfgM?utm_source=generator" 
+    width="50%" height="700" frameBorder="0" allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy"></iframe>
+  </div>
+  <div id="RapResult">
+    <h1>You should check out...rap music!</h1>
+    <h2>Here's a playlist to try:</h2>
+    <iframe style="border-radius:12px" 
+    src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUsuxWHRQd?utm_source=generator" 
+    width="50%" height="700" frameBorder="0" allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy"></iframe>
+  </div>
+  <div id="AlternativeResult">
+    <h1>You should check out...alternative music!</h1>
+    <h2>Here's a playlist to try:</h2>
+    <iframe style="border-radius:12px" 
+    src="https://open.spotify.com/embed/playlist/37i9dQZF1DWVqJMsgEN0F4?utm_source=generator&theme=0" 
+    width="50%" height="700" frameBorder="0" allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy"></iframe>
+  </div>
+  <div id="RnBResult">
+    <h1>You should check out...r&b music!</h1>
+    <h2>Here's a playlist to try:</h2>
+    <iframe style="border-radius:12px" 
+    src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4SBhb3fqCJd?utm_source=generator&theme=0" 
+    width="50%" height="700" frameBorder="0" allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy"></iframe>
+  </div>
+
+
+</body>

@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+
+body {
+    font-family: 'Amatic SC';
+    font-size: large;
+    background-color: rgb(248, 234, 242);
+    color: rgb(62, 24, 85);
+    text-align: center;
+  }
+  
+  img {
+    height: 25%;
+    width: 25%;
+    border: 10px double rgb(255, 255, 255);
+  }
+  
+  h1 {
+    text-shadow: 3px 3px rgb(229, 195, 240);
+    font-family: 'Amatic SC';
+  }
+  
+  button {
+    background-color: rgb(90, 64, 99);
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  #CountryResult,
+  #PopResult,
+  #RapResult,
+  #AlternativeResult,
+  #RnBResult {
+    display: none;
+  }
