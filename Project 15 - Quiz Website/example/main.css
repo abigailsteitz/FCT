@@ -25,6 +25,10 @@ button {
 #DiorResult,
 #FentiResult,
 #KidResult,
-#TGlowResult {
+#TGlowResult, 
+#FatResult,
+#GothResult,
+#FortniteResult, 
+#LawnmowerResult{
   display: none;
 }
