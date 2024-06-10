@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit Cycler</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .outfit {
+            margin: 10px;
+            position: relative;
+        }
+        img {
+            width: 250px;
+            height: 300px;
+            margin: 10px;
+        }
+        #shirt {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            z-index: 2; /* Higher z-index makes it appear on top */
+        }
+        #pants {
+            position: absolute;
+            top: 320Px; /* Adjust to position pants below shirt */
+            left: 0;
+            z-index: 1; /* Lower z-index makes it appear behind */
+        }
+        .button-container {
+            display: flex;
+        }
+        select {
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mix & Match Outfits</h1>
+    <div class="outfit">
+        <img id="pants" src="pants1.jpg" alt="Pants">
+        <img id="shirt" src="shirt1.jpg" alt="Shirt">
+    </div>
+    <div class="button-container">
+        <select id="shirtSelect">
+            <option value="shirt1.jpg">Shirt 1</option>
+            <option value="shirt2.jpg">Shirt 2</option>
+            <option value="shirt3.jpg">Shirt 3</option>
+            <option value="shirt4.jpg">Shirt 4</option>
+            <option value="shirt5.jpg">Shirt 5</option>
+        </select>
+        <select id="pantsSelect">
+            <option value="pants1.jpg">Pants 1</option>
+            <option value="pants2.jpg">Pants 2</option>
+            <option value="pants3.jpg">Pants 3</option>
+            <option value="pants4.jpg">Pants 4</option>
+            <option value="pants5.jpg">Pants 5</option>
+        </select>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

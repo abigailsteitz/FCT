@@ -46,12 +46,10 @@ function seeResult() {
 
     if (document.getElementById("Good").checked) {
         ChildCare += 1;
-        
     } else if (document.getElementById("Alright").checked) {
         Athlete += 1;
         Doctor += 1;
     } else {
-        
         Chef += 1;
     }
 
